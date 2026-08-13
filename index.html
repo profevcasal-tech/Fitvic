@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitvic</title>
+    <!-- Tailwind CSS para los estilos del componente -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- React y Babel para interpretar JSX en el navegador -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Carga tu archivo Fitvic.jsx -->
+    <script type="text/babel" src="./Fitvic.jsx"></script>
+    <script type="text/babel">
+      // Monta el componente en el HTML
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<Fitvic />);
+    </script>
+  </body>
+</html>
